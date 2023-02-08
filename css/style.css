@@ -10,7 +10,9 @@
 
 /* TYPO */
 
-
+h1, h2, h3, h4{
+    color: white;
+}
 
 
 /* COMMON */
@@ -22,8 +24,6 @@ body{
 h3{
     font-size: 14px;
 }
-
-/* MAIN */
 
 main{
     height: calc(100% - 90px);
@@ -39,6 +39,52 @@ main{
 .content{
     background-color: #141922;
     width: 100%;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.fa-solid{
+    color: white;
+}
+
+/* MAIN */
+
+/* SIDEBAR */
+
+
+
+nav div img{
+    width: 100%;
+}
+
+.sidebar{
+    color: #a2a3a2;
+}
+
+.small-logo{
+    display: none;
+    margin: 0 auto;
+}
+
+.big-logo{
+    width: 70%;
+}
+
+.sidebar-icons div h3, .sidebar-icons div div i{
+    display: inline-block;
+}
+
+.sidebar div ul li{
+    color: #a2a3a2;
+    list-style: none;
+}
+
+.user{
+    align-self: flex-end;
 }
 
 
@@ -89,6 +135,28 @@ main{
 
 @media screen and (max-width: 767px){
 
+    .small-logo{
+        display: block;
+    }
+
+    .big-logo{
+        display: none;
+    }
+    .sidebar{
+        max-width: 50px;
+    }
+    .sidebar-icons div h3{
+        display: none;
+    }
+    .sidebar-icons div{
+        text-align: center;
+    }
+    .playlist-names{
+        display: none
+    }
+    .playlist{
+        display: none;
+    }
 }
 
 
